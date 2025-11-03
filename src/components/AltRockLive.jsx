@@ -136,7 +136,7 @@ export default function AltRockLive() {
                   : "bg-gray-900/90 border-gray-700"
               }`}
             >
-              <div className="w-1/3 h-64 flex-shrink-0">
+             <div className="md:w-1/3 h-48 md:h-64 flex-shrink-0">
                 <img src={d.img} alt={`${d.city} 会場写真`} className="w-full h-full object-cover" />
               </div>
 
@@ -149,10 +149,12 @@ export default function AltRockLive() {
                   </p>
                   <p className="text-lg font-bold mt-3">{d.price}</p>
                 </div>
-
+ <div className="border-t border-dashed border-gray-600 my-4"></div>
                 {isEnded ? (
                   <div className="text-gray-500 text-center font-semibold mt-4">ENDED</div>
                 ) : (
+
+                  
                   <div className="mt-4 flex gap-3">
                     <a
                       href={d.ticket}
